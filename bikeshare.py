@@ -256,6 +256,7 @@ def raw_output(df):
 
 
 def main():
+    """Main loop while user input is yes"""
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
