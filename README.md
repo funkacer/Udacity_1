@@ -11,7 +11,8 @@ In this project, Python is used to explore data related to bike share systems fo
 1. Chicago
 2. New York City
 3. Washington
-The bikeshare.py script takes in raw input to create an interactive experience in the terminal to present various statistics derived from data. Also, it is possible to view raw data within terminal. Enjoy :sunny: :smile:
+
+The bikeshare.py script takes in raw input to create an interactive experience in the terminal to present various statistics derived from data. Also, it is possible to view raw data. Enjoy :sunny: :smile:
 
 ### Files used
 - bikeshare.py
