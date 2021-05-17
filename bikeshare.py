@@ -266,11 +266,11 @@ def main():
         user_stats(df)
         raw_output(df)
 
-        restart = ''
-        while restart not in ['yes', 'no']:
-            restart = input('\nWould you like to restart? Enter yes or no.\n').lower()
-            restart = check_input(restart, ['yes', 'no'])
-        if restart.lower() != 'yes':
+        answer = ''
+        while answer not in ['yes', 'no']:
+            answer = input('\nWould you like to restart? Enter yes or no.\n').lower()
+            answer = check_input(answer, ['yes', 'no'])
+        if answer.lower() != 'yes':
             break
 
 
