@@ -24,7 +24,6 @@ def check_input(inp, lst):
     """
     found = 0
     for inp_check in lst:
-        #print(inp_check)
         if inp_check.startswith(inp):
             out = inp_check
             found += 1
@@ -90,8 +89,6 @@ def load_data(city, month, day):
 
     df['Start Time'] = pd.to_datetime(df['Start Time'])
 
-    #print(df.dtypes)
-
     # I need these fiels to filters
     df['month'] = df['Start Time'].dt.month
     # int month: 1 is January
@@ -110,8 +107,6 @@ def load_data(city, month, day):
         # filter by day of week to create the new dataframe
         day_index = DAYS.index(day)
         df = df[df['day_of_week'] == day_index]
-
-    #print(df.head())
 
     return df
 
@@ -239,7 +234,6 @@ def raw_output(df):
 
     if answer == 'yes':
         row_index = 0
-        #df = df.iloc[:9,:]
         while answer == 'yes':
             to = row_index + 5
             if to > len (df): to = len(df)
